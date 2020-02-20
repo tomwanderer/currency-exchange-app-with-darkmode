@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+:root {
+    --primary-color: #302AE6;
+    --secondary-color: #536390;
+    --font-color: #424242;
+    --bg-color: #fff;
+    --heading-color: #292922;
+}
+
+[data-theme="dark"] {
+    --primary-color: #9A97F3;
+    --secondary-color: #818cab;
+    --font-color: #e1e1ff;
+    --bg-color: #161625;
+    --heading-color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+button:focus { outline:0 !important; }
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+body {
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 120px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.rate-container {
+    text-align: center;
+}
+.rate {
+    color: var(--heading-color);
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 5rem;
+
+}
+
+
+.border-box {
+    display: flex;
+    background-color: #000428;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+    border-radius: 15px 15px 15px 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 40px 30px 30px;    
+}
+
+.amount-text {
+    display: block;
+    color: rgba(255,255,255);
+    margin: 0 10px 5px;
+    font-weight: bold;
+    font-size: 25px; 
+}
+
+.from-text {
+    display: block;
+    color: rgba(255,255,255);
+    margin: 0 10px 5px;
+    font-weight: bold;
+    font-size: 25px; 
+}
+
+.to-text {
+    display: block;
+    color: rgba(255,255,255);
+    margin: 0 10px 5px;
+    font-weight: bold;
+    font-size: 25px; 
+}
+
+
+.amount {
+    height: 60px;
+    border-radius: 10px;
+    border-style: initial;
+    width: 100%;
+    background: #fff;
+    border-color: initial;
+    border-image: initial;
+    display: inline-block;
+    font-size: 1.5rem;
+    letter-spacing: normal;
+    padding: 1px;
+}
+
+.amount-2 {
+    height: 60px;
+    border-radius: 10px;
+    border-style: initial;
+    width: 100%;
+    background: #fff;
+    border-color: initial;
+    border-image: initial;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    letter-spacing: normal;
+    padding: 1px;
+    margin-left: 40px;
+}
+
+
+input[value]{
+    padding-left: 15px;
+    }
+
+.btn-swap {
+    color: #000428;
+    background-color: rgb(252, 184, 19);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    height: 60px;
+    padding-right: 30px;
+    margin-left: 20px;
+    border: none;
+}
+
+.btn-swap-2 {
+    color: #000428;
+    background-color: rgb(252, 184, 19);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    height: 60px;
+    padding-right: 30px;
+    margin-left: 20px;
+    border: none;
+    width: 100%;
+    
+}
+.arrow {
+    display: flex;
+    justify-content: center;
+    margin-left:15px;
+}
+
+.arrow-2 {
+    margin-left:15px;
+    display: flex;
+    width: 100%;
+}
+
+.currency select {
+    padding: 10px 20px 10px 10px;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid #dedede;
+    font-size: 16px;
+    background: transparent;
+    background-color: #fff;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%20000002%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+    background-position: right 10px top 50%, 0, 0;
+    background-size: 12px auto, 100%;
+    background-repeat: no-repeat;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+/* toggle button dark-light mode */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 150px;   
+  }
+
+  em {
+    margin-left: 10px;
+    font-size: 1rem;
+    color: var(--heading-color);
+  } 
+
+  .theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+  }
+  
+  .theme-switch input {
+    display:none;
+  }
+  
+  .slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+  }
+  
+  input:checked + .slider {
+    background-color: #66bb6a;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
